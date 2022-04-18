@@ -1,0 +1,9 @@
+@font-face {
+	font-family: archerpro;
+	src: url(./ArcherPro\ Book.otf);
+}
+@font-face {
+	font-family: archerbold;
+	src: url(./ArcherPro\ Bold.otf);
+	font-weight: bold;
+}

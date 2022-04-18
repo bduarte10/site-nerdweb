@@ -1,0 +1,12 @@
+@import './global/global.css';
+@import './utilidades/webfonts/webfonts.css';
+@import './global/header.css';
+@import './global/subheader.css';
+@import './global/footer.css';
+@import './home/banner.css';
+@import './home/carousel.css';
+@import './home/produtos.css';
+@import './home/time.css';
+
+@import './utilidades/cores.css';
+@import './utilidades/componentes.css';

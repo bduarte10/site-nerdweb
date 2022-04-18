@@ -1,0 +1,139 @@
+.subheader-bg {
+	border-top: solid 3px var(--celeste);
+	background: var(--dark-blue);
+}
+.subheader {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 20px;
+	padding: 10px 0;
+	flex-wrap: wrap;
+}
+
+.subheader ul {
+	display: flex;
+	gap: 10px;
+	font-family: 'archerpro';
+	font-size: 14px;
+	color: var(--white);
+}
+
+.subheader ul li:first-child i {
+	padding-left: 10px;
+}
+
+input.search {
+	background: var(--dark-blue);
+	border: none;
+	margin-bottom: 10px;
+	font-family: archerpro;
+	font-size: 14px;
+}
+
+input:focus {
+	border: none;
+	outline: 0;
+	font-size: 14px;
+	color: var(--white);
+}
+
+.searchbar {
+	display: inline-block;
+	border: solid 1px var(--light-blue);
+	border-radius: 8px;
+	padding: 03px 15px;
+}
+.searchbar:hover {
+	border: solid 1px var(--celeste);
+	box-shadow: 0 0 2px rgba(81, 203, 238, 1);
+}
+
+.searchbar button {
+	position: relative;
+	top: 5px;
+	background: var(--dark-blue);
+	border: none;
+	color: var(--celeste-x-light);
+	font-size: 20px;
+}
+.searchbar button img {
+	cursor: pointer;
+	transition: transform 0.3s ease;
+}
+.searchbar button img:hover {
+	transform: scale(1.1);
+}
+
+.megabox {
+	position: absolute;
+	border-top: solid 4px var(--light-blue);
+	top: 65px;
+	padding: 30px 0;
+	width: 100%;
+	background: var(--white);
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.3s ease;
+}
+.nav-links a {
+	padding: 25px 10px;
+}
+.nav-links a:hover {
+	background: #09648840;
+}
+
+.nav-links li:hover .megabox {
+	visibility: visible;
+	opacity: 1;
+}
+.nav-links i {
+	transition: all 0.5s ease;
+}
+.nav-links li:hover i {
+	transform: rotatex(180deg);
+}
+.megabox .content {
+	display: flex;
+	gap: 90px;
+	justify-content: space-between;
+	max-width: 855px;
+	margin: 0 auto;
+}
+.row h2 {
+	font-family: Sora;
+	font-weight: 800;
+	font-size: 18px;
+
+	color: var(--ocean-blue);
+}
+.row h2::after {
+	content: '';
+	display: block;
+	margin-top: 12px;
+	width: 85px;
+	height: 1px;
+	background: var(--light-gray);
+}
+.megabox .row .mega-links {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	padding-top: 15px;
+	font-family: Sora;
+	font-size: 14px;
+	color: var(--dark-gray);
+}
+.darkblue-links li a {
+	font-family: Sora;
+	font-weight: 700;
+	font-size: 14px;
+	color: var(--dark-blue);
+}
+
+@media (max-width: 750px) {
+	.subheader {
+		display: none;
+	}
+} ;

@@ -1,0 +1,11 @@
+.container {
+	box-sizing: border-box;
+	max-width: 1210px;
+	margin: 0 auto;
+}
+
+@media (max-width: 740px) {
+	.container {
+		max-width: 80%;
+	}
+}

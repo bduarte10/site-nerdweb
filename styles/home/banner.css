@@ -1,0 +1,20 @@
+.banner img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+	margin: 0 auto;
+	object-fit: cover;
+}
+.banner .mobile-banner {
+	object-fit: cover;
+	display: none;
+}
+@media (max-width: 550px) {
+	.banner .desktop-banner {
+		display: none;
+	}
+	.banner .mobile-banner {
+		display: block;
+		width: 100%;
+	}
+} ;

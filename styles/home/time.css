@@ -1,0 +1,71 @@
+.time-bg {
+	background-image: url('../../imagens/bg-time.png');
+
+	background-size: cover;
+}
+.description {
+	width: 50%;
+	padding: 82px 0 72px 77px;
+}
+.description h2 {
+	padding-bottom: 25px;
+	font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
+	font-weight: 900;
+	font-size: 32px;
+	color: var(--dark-blue);
+}
+.description p {
+	padding-bottom: 60px;
+	font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
+	font-weight: 700;
+	font-size: 18px;
+	color: var(--ocean-blue);
+}
+.description button {
+	padding: 10px 35px;
+	background: var(--celeste);
+	border: none;
+	font: normal normal 900 14px/19px Roboto Slab;
+	color: #033244;
+	cursor: pointer;
+	text-transform: uppercase;
+}
+@media (max-width: 750px) {
+	.time-bg {
+		background-image: url('../../imagens/time-mob.png');
+		background-size: cover;
+	}
+	.description {
+		padding: 60px 30px;
+		text-align: center;
+		width: 100%;
+	}
+	.description h2 {
+		font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
+		font-weight: 900;
+		font-size: 20px;
+		padding-left: 50px;
+		padding-right: 50px;
+		padding-bottom: 30px;
+
+		color: var(--dark-blue);
+	}
+	.description p {
+		padding-left: 32px;
+		padding-right: 32px;
+		/* padding-bottom: 32px; */
+		font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
+		font-weight: 700;
+		font-size: 15px;
+		color: var(--ocean-blue);
+	}
+	.description button {
+		padding: 10px 35px;
+		background: var(--celeste);
+		border: none;
+		font: normal normal 900 14px/19px Roboto Slab;
+		color: #033244;
+		cursor: pointer;
+		text-transform: uppercase;
+	}
+}

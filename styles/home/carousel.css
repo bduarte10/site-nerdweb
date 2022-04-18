@@ -1,0 +1,209 @@
+:root {
+	--swiper-navigation-size: 10px;
+
+	--swiper-navigation-color: var(--ocean-blue);
+}
+.carousel {
+	display: flex;
+	gap: 50px;
+	padding-top: 60px;
+}
+.separador {
+	padding-top: 60px;
+}
+.text-block {
+	width: 35%;
+}
+.services-btn,
+.services-btn2 {
+	padding: 10px 35px;
+	background: var(--celeste);
+	border: none;
+	font: normal normal 900 14px/19px Roboto Slab;
+	color: #033244;
+	text-transform: uppercase;
+}
+.services-btn2 {
+	display: none;
+}
+.text-block h2 {
+	padding-top: 60px;
+	padding-bottom: 35px;
+	font-family: Roboto Slab;
+	font-weight: 900;
+	color: var(--dark-blue);
+	padding-right: 30px;
+	font-size: 32px;
+	flex-direction: column;
+}
+.text-block h2 span {
+	color: var(--celeste-dark);
+}
+.swiper-slide {
+	height: 320px;
+	text-align: center;
+	font-size: 18px;
+	gap: 15px;
+	background: rgb(255, 255, 255);
+
+	/* Center slide text vertically */
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: column;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+
+	box-shadow: 1px 3px 10px #0000002a;
+}
+
+.swiper {
+	background: rgb(255, 255, 255);
+	padding-top: 60px;
+
+	width: 910px;
+	height: 400px;
+}
+.swiper-button-prev,
+.swiper-button-next {
+	position: absolute;
+	font-weight: 900;
+	top: 10%;
+	width: 92%;
+	height: var(--swiper-navigation-size);
+
+	margin-top: calc(0px - (var(--swiper-navigation-size) / 2));
+	z-index: 10;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: start;
+	color: var(--swiper-navigation-color, var(--swiper-theme-color));
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+	font-family: swiper-icons;
+	background: #ececec;
+
+	width: 20px;
+	height: 20px;
+	text-align: center;
+	border-radius: 50px;
+	font-size: var(--swiper-navigation-size);
+	text-transform: none !important;
+	letter-spacing: 0;
+	text-transform: none;
+	font-variant: initial;
+	line-height: 2;
+}
+.separador-mobile {
+	display: none;
+}
+
+@media (max-width: 750px) {
+	:root {
+		--swiper-navigation-size: 20px;
+	}
+	.swiper {
+		background: rgb(255, 255, 255);
+		padding-top: 20px;
+		margin-bottom: 60px;
+		width: 100%;
+		height: 100%;
+	}
+	.swiper-slide {
+		flex-shrink: 0;
+		width: 100%;
+		height: 100%;
+		position: relative;
+		padding: 40px 50px;
+
+		transition-property: transform;
+	}
+	.swiper-button-prev,
+	.swiper-button-next {
+		position: absolute;
+		top: 50%;
+		width: calc(var(--swiper-navigation-size) / 44 * 27);
+		height: var(--swiper-navigation-size);
+		margin-top: calc(0px - (var(--swiper-navigation-size) / 2));
+		z-index: 10;
+		cursor: pointer;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color: var(--swiper-navigation-color, var(--swiper-theme-color));
+	}
+	.swiper-button-prev:after,
+	.swiper-button-next:after {
+		font-family: swiper-icons;
+		background: none;
+		font-size: 20px;
+		text-transform: none !important;
+		letter-spacing: 0;
+		text-transform: none;
+		font-variant: initial;
+
+		height: 30px;
+		border-radius: 50%;
+		line-height: 1;
+	}
+	.swiper-button-prev,
+	.swiper-rtl .swiper-button-next {
+		left: 10px;
+		right: auto;
+	}
+	.swiper-button-prev:after,
+	.swiper-rtl .swiper-button-next:after {
+		content: 'prev';
+	}
+	.swiper-button-next,
+	.swiper-rtl .swiper-button-prev {
+		right: 10px;
+		left: auto;
+	}
+	.swiper-button-next:after,
+	.swiper-rtl .swiper-button-prev:after {
+		content: 'next';
+	}
+	.swiper-button-lock {
+		display: none;
+	}
+	.carousel {
+		padding-top: 25px;
+		gap: 30px;
+		flex-direction: column;
+	}
+	.text-block {
+		text-align: center;
+		width: 100%;
+	}
+	.text-block h2 {
+		padding: 0 20px 20px 20px;
+		font-size: 24px;
+		text-align: center;
+	}
+	.separador {
+		display: none;
+	}
+	.separador-mobile {
+		padding-top: 0px;
+		margin: 0 auto;
+		display: block;
+	}
+	.services-btn {
+		display: none;
+	}
+	.services-btn2 {
+		margin: 0 auto;
+		display: block;
+	}
+}

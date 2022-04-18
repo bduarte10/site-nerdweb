@@ -1,0 +1,57 @@
+.produtos-bg {
+	padding-top: 80px;
+}
+.produtos-bg h2 {
+	text-align: center;
+	font-family: Roboto Slab;
+	font-weight: 900;
+	color: var(--dark-blue);
+	font-size: 32px;
+	padding-top: 10px;
+	padding-bottom: 40px;
+}
+.produtos-bg h2 span {
+	color: var(--celeste-dark);
+}
+.btn {
+	display: flex;
+	justify-content: center;
+}
+.produtos-bg .btn button {
+	margin: 40px 0 80px;
+	padding: 10px 35px;
+	background: var(--celeste);
+	border: none;
+	font: normal normal 900 14px/19px Roboto Slab;
+	color: #033244;
+	cursor: pointer;
+	text-transform: uppercase;
+}
+
+.produtos {
+	padding: 15px;
+	background: #f3f3f3;
+	display: flex;
+	overflow-x: auto;
+	gap: 15px;
+}
+.produtos div {
+	padding: 10px;
+	background: #f3f3f3;
+	mix-blend-mode: multiply;
+}
+.produtos p {
+	font-size: 14px;
+	text-transform: uppercase;
+	padding: 5px;
+	color: var(--gray);
+	text-align: center;
+}
+.produtos::-webkit-scrollbar {
+	height: 10px;
+}
+
+.produtos::-webkit-scrollbar-thumb {
+	background-color: var(--blue);
+	border-radius: 20px;
+}
