@@ -33,17 +33,18 @@
 @media (max-width: 750px) {
 	.time-bg {
 		background-image: url('../../imagens/time-mob.png');
-		background-size: cover;
+		background-repeat: no-repeat;
+		background-size: contain;
 	}
 	.description {
-		padding: 60px 30px;
+		padding: 40px 30px;
 		text-align: center;
 		width: 100%;
 	}
 	.description h2 {
 		font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
 		font-weight: 900;
-		font-size: 20px;
+		font-size: 17px;
 		padding-left: 50px;
 		padding-right: 50px;
 		padding-bottom: 30px;
@@ -53,10 +54,10 @@
 	.description p {
 		padding-left: 32px;
 		padding-right: 32px;
-		/* padding-bottom: 32px; */
+		padding-bottom: 30px;
 		font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
 		font-weight: 700;
-		font-size: 15px;
+		font-size: 12px;
 		color: var(--ocean-blue);
 	}
 	.description button {
