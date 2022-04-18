@@ -16,12 +16,17 @@
 }
 .services-btn,
 .services-btn2 {
+	cursor: pointer;
 	padding: 10px 35px;
 	background: var(--celeste);
 	border: none;
 	font: normal normal 900 14px/19px Roboto Slab;
 	color: #033244;
 	text-transform: uppercase;
+}
+.services-btn:hover,
+.services-btn2:hover {
+	background: var(--celeste-dark);
 }
 .services-btn2 {
 	display: none;
@@ -32,7 +37,7 @@
 	font-family: Roboto Slab;
 	font-weight: 900;
 	color: var(--dark-blue);
-	padding-right: 30px;
+	padding-right: 20px;
 	font-size: 32px;
 	flex-direction: column;
 }
@@ -68,7 +73,7 @@
 	background: rgb(255, 255, 255);
 	padding-top: 60px;
 
-	width: 910px;
+	width: 1200px;
 	height: 400px;
 }
 .swiper-button-prev,
@@ -106,6 +111,20 @@
 }
 .separador-mobile {
 	display: none;
+}
+.swiper-slide h3 {
+	font-family: Roboto Slab;
+	font-weight: 900;
+	color: #101912;
+
+	font-size: 16px;
+}
+.swiper-slide p {
+	font-family: Roboto Slab;
+	font-weight: 500;
+	color: #101912;
+
+	font-size: 15px;
 }
 
 @media (max-width: 750px) {

@@ -27,6 +27,9 @@
 	cursor: pointer;
 	text-transform: uppercase;
 }
+.produtos-bg .btn button:hover {
+	background: var(--celeste-dark);
+}
 
 .produtos {
 	padding: 15px;
@@ -48,7 +51,7 @@
 	text-align: center;
 }
 .produtos::-webkit-scrollbar {
-	height: 10px;
+	height: 8px;
 }
 
 .produtos::-webkit-scrollbar-thumb {
@@ -56,11 +59,17 @@
 	border-radius: 20px;
 }
 @media (max-width: 750px) {
+	.produtos-bg {
+		padding-top: 60px;
+	}
 	.produtos-bg h2 {
 		font-size: 17px;
 		padding-top: 10px;
 		padding-right: 110px;
 		padding-left: 110px;
 		padding-bottom: 30px;
+	}
+	.produtos-bg .btn button {
+		margin: 40px 0 60px;
 	}
 }

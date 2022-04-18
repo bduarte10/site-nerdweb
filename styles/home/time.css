@@ -30,14 +30,18 @@
 	cursor: pointer;
 	text-transform: uppercase;
 }
+.description button:hover {
+	background: var(--celeste-dark);
+}
 @media (max-width: 750px) {
 	.time-bg {
 		background-image: url('../../imagens/time-mob.png');
 		background-repeat: no-repeat;
+		background-position: center center;
 		background-size: 100% 100% cover;
 	}
 	.description {
-		padding: 40px 30px;
+		padding: 80px 30px;
 		text-align: center;
 		width: 100%;
 	}
@@ -68,5 +72,12 @@
 		color: #033244;
 		cursor: pointer;
 		text-transform: uppercase;
+	}
+}
+@media (max-width: 380px) {
+	.description {
+		padding: 80px 10px;
+		text-align: center;
+		width: 100%;
 	}
 }

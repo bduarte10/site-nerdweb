@@ -1,0 +1,81 @@
+.servicos h2 {
+	text-align: center;
+	color: var(--dark-blue);
+	font-family: Roboto Slab;
+	font-weight: 900;
+	font-size: 32px;
+	padding-top: 80px;
+}
+.servicos > p {
+	text-align: center;
+	padding-bottom: 40px;
+	color: var(--blue);
+	font-family: Roboto Slab;
+	font-weight: 500;
+	font-size: 20px;
+}
+
+.grid-servicos {
+	display: flex;
+	gap: 24px;
+	margin-bottom: 40px;
+	padding-bottom: 10px;
+	overflow-x: auto;
+}
+.grid-servicos::-webkit-scrollbar {
+	height: 10px;
+	background-color: var(--light-gray);
+}
+.grid-servicos::-webkit-scrollbar-thumb {
+	background-color: var(--blue);
+	padding: 5px;
+}
+
+.servico {
+	background: #283137;
+}
+.service-description {
+	text-align: left;
+	padding: 24px 30px;
+}
+.service-description h3 {
+	color: #fff;
+	font-family: Roboto Slab;
+	font-weight: 700;
+	font-size: 20px;
+	padding-bottom: 16px;
+}
+.service-description p {
+	color: var(--celeste-x-light);
+	font-family: Roboto Slab;
+	font-weight: 300;
+	font-size: 16px;
+}
+.servico a {
+	position: relative;
+	display: inline-block;
+	padding: 20px 30px;
+	color: var(--blue);
+	font-family: Roboto Slab;
+	font-weight: 900;
+	font-size: 14px;
+}
+.servico a:hover {
+	color: var(--light-blue);
+}
+.servico a::after {
+	content: '';
+	display: block;
+	height: 2px;
+	width: 0px;
+	background: var(--celeste);
+	position: absolute;
+	margin-top: 4px;
+	transition: 0.3s;
+}
+
+.servico a:hover::after {
+	width: 45%;
+}
+/* @media (max-width: 750) {
+} */
