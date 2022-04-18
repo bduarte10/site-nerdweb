@@ -4,7 +4,7 @@ const swiper = new Swiper('.swiper', {
 	loop: true,
 	slidesPerView: 1,
 	centeredSlides: true,
-	spaceBetween: 10,
+	spaceBetween: 5,
 	grabCursor: true,
 
 	// Responsive breakpoints

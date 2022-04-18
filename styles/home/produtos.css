@@ -55,3 +55,12 @@
 	background-color: var(--blue);
 	border-radius: 20px;
 }
+@media (max-width: 750px) {
+	.produtos-bg h2 {
+		font-size: 17px;
+		padding-top: 10px;
+		padding-right: 110px;
+		padding-left: 110px;
+		padding-bottom: 30px;
+	}
+}
