@@ -77,5 +77,21 @@
 .servico a:hover::after {
 	width: 45%;
 }
-/* @media (max-width: 750) {
-} */
+@media (max-width: 750px) {
+	.servicos h2 {
+		text-align: center;
+		color: var(--dark-blue);
+		font-family: Roboto Slab;
+		font-weight: 900;
+		font-size: 17px;
+		padding-top: 60px;
+	}
+	.servicos > p {
+		text-align: center;
+		padding-bottom: 20px;
+		color: var(--blue);
+		font-family: Roboto Slab;
+		font-weight: 500;
+		font-size: 12px;
+	}
+}
