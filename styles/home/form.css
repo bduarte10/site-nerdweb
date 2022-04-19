@@ -1,0 +1,79 @@
+.form {
+	background: var(--x-light-gray);
+	display: flex;
+	padding: 0px 90px;
+}
+
+.form .container {
+	margin-top: 80px;
+}
+.form-title {
+	padding: 50px 60px;
+	width: 60%;
+}
+.form-title h2 {
+	padding-bottom: 16px;
+	font-family: Roboto Slab;
+	font-size: 32px;
+	font-weight: 900;
+	width: 100%;
+	color: var(--dark-blue);
+}
+.form-title p {
+	font-family: Roboto Slab;
+	font-size: 20px;
+	font-weight: 500;
+	width: 100%;
+	color: var(--blue);
+}
+.formulario {
+	padding-top: 50px;
+	width: 100%;
+	align-items: center;
+}
+
+input[type='text'],
+input[type='email'] {
+	background: #f3f3f3;
+	padding: 10px;
+	border: 2px solid #005271;
+	width: 100%;
+	color: #033244;
+}
+input[type='submit'] {
+	padding: 10px 35px;
+	background: var(--celeste);
+	border: none;
+	font: normal normal 900 14px/19px Roboto Slab;
+	color: #033244;
+	cursor: pointer;
+	text-transform: uppercase;
+}
+
+input[type='submit']:hover {
+	background: var(--celeste-dark);
+}
+@media (max-width: 768px) {
+	.form-title {
+		text-align: center;
+		width: 100%;
+
+		padding: 40px 40px 0px;
+	}
+
+	.form {
+		background: var(--x-light-gray);
+		display: flex;
+		flex-direction: column;
+		padding: 0px;
+	}
+	.formulario {
+		padding: 40px 40px;
+		width: 100%;
+		align-items: center;
+	}
+	input[type='submit'] {
+		display: block;
+		width: 100%;
+	}
+}
