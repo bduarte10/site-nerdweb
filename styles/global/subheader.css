@@ -80,7 +80,13 @@ input:focus {
 .nav-links a {
 	padding: 25px 10px;
 }
+.mega-links a {
+	padding: 5px 5px;
+}
 .nav-links a:hover {
+	background: #09648840;
+}
+.mega-links a:hover {
 	background: #09648840;
 }
 
